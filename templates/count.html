@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counted</title>
+</head>
+<body>
+    <h5>The number of words in your text is {{count}}</h5>
+    <h2>Your text</h2>
+   <p>{{fulltext}}</p> 
+
+   <h3>The list of the counted words are as below</h3>
+   {% for worrd,total in countedwords %}
+   {{worrd}}--{{total}}
+   <br>
+   {% endfor %}
+   <a href="{% url 'home' %}">REdo</a>
+</body>
+</html>
